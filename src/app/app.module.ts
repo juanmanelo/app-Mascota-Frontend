@@ -8,6 +8,7 @@ import { PiePaginaComponent } from './plantilla/pie-pagina/pie-pagina.component'
 import { InicioComponent } from './plantilla/inicio/inicio.component';
 import { ErrorComponent } from './plantilla/error/error.component';
 import { AcercaComponent } from './plantilla/acerca/acerca.component';
+import { ContactoComponent } from './plantilla/contacto/contacto.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AcercaComponent } from './plantilla/acerca/acerca.component';
     InicioComponent,
     ErrorComponent,
     AcercaComponent,
+    ContactoComponent,
     
   ],
   imports: [
