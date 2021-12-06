@@ -35,15 +35,15 @@ const routes: Routes = [
     component: BuscarUsuarioComponent
   },
   {
-    path:"crear-Cliente",
+    path:"crear-cliente",
     component: CrearClienteComponent
   },
   {
-    path:"editar-Cliente",
+    path:"editar-cliente",
     component: EditarClienteComponent
   },
   {
-    path:"eliminar-Cliente",
+    path:"eliminar-cliente",
     component: EliminarClienteComponent
   },
   {

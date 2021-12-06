@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AcercaComponent } from './plantilla/acerca/acerca.component';
 import { ErrorComponent } from './plantilla/error/error.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
 
@@ -12,6 +13,10 @@ const routes: Routes = [
     path:"",
     pathMatch:"full",
     redirectTo:"/inicio"
+  },
+  {
+    path: "acerca",
+    component: AcercaComponent
   },
   {
     path: "seguridad",
