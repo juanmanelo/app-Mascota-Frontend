@@ -9,6 +9,7 @@ import { InicioComponent } from './plantilla/inicio/inicio.component';
 import { ErrorComponent } from './plantilla/error/error.component';
 import { AcercaComponent } from './plantilla/acerca/acerca.component';
 import { ContactoComponent } from './plantilla/contacto/contacto.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ContactoComponent } from './plantilla/contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
