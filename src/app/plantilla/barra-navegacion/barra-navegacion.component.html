@@ -7,7 +7,7 @@
       <li *ngIf="!seInicioSesion"><a routerLink="/inicio">Inicio</a></li>
       <li *ngIf="!seInicioSesion"><a routerLink="/acerca">Acerca</a></li>
       <li *ngIf="seInicioSesion"><a routerLink="/administracion/usuarios">Usuarios</a></li>
-      <li *ngIf="seInicioSesion"><a routerLink="/administracion/crear-producto">Productos</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
       <li *ngIf="!seInicioSesion"><a routerLink="/contacto">Contacto</a></li>
       <li *ngIf="!seInicioSesion"><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
       <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>
@@ -22,7 +22,7 @@
   <li *ngIf="!seInicioSesion"><a routerLink="/inicio">Inicio</a></li>
   <li *ngIf="!seInicioSesion"><a routerLink="/acerca">Acerca</a></li>
   <li *ngIf="seInicioSesion"><a routerLink="/administracion/usuarios">Usuarios</a></li>
-  <li *ngIf="seInicioSesion"><a routerLink="/administracion/crear-producto">Productos</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
   <li *ngIf="!seInicioSesion"><a routerLink="/contacto">Contacto</a></li>
   <li *ngIf="!seInicioSesion"><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
   <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>

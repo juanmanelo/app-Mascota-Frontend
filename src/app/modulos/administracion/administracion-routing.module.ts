@@ -31,8 +31,20 @@ const routes: Routes = [
     component: EliminarUsuarioComponent
   },
   {
+    path:"listar-productos",
+    component: BuscarProductoComponent
+  },
+  {
     path:"buscar-usuario",
     component: BuscarUsuarioComponent
+  },
+  {
+    path:"crear-producto",
+    component: CrearProductoComponent
+  },
+  {
+    path:"editar-producto/:id",
+    component: EliminarProductoComponent
   },
   {
     path:"crear-cliente",
