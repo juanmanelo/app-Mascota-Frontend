@@ -1,1 +1,74 @@
-<p>buscar-empleado works!</p>
+<a routerLink="/administracion/crear-empleado" class="btn">Nuevo Asesor</a>
+<table class="table responsive">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Fecha de Ingreso
+            </th>
+            <th>
+                Cargo
+            </th>
+            <th>
+                Departamento
+            </th>
+            <th>
+                Correo
+            </th>
+            <th>
+                Clave
+            </th>
+            <th>
+                Celular
+            </th>
+            <th>
+                Comision
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of listadoRegistros">
+            <td>
+                {{e.nombre}}
+            </td>
+            <td>
+                {{e.apellido}}
+            </td>
+            <td>
+                {{e.fechaIngreso}}
+            </td>
+            <td>
+                {{e.cargo}}
+            </td>
+            <td>
+                {{e.departamento}}
+            </td>
+            <td>
+                {{e.correo}}
+            </td>
+            <td>
+                {{e.clave}}
+            </td>
+            <td>
+                {{e.celular}}
+            </td>
+            <td>
+                {{e.comision}}
+            </td>
+            <td>
+                <a routerLink="/administracion/editar-empleado/{{e.id}}" class="btn">Editar Asesor</a>
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>
+

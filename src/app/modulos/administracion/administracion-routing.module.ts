@@ -67,7 +67,11 @@ const routes: Routes = [
     component: CrearEmpleadoComponent
   },
   {
-    path:"editar-empleado",
+    path:"listar-empleado",
+    component: BuscarEmpleadoComponent
+  },
+  {
+    path:"editar-empleado/:id",
     component: EditarEmpleadoComponent
   },
   {
