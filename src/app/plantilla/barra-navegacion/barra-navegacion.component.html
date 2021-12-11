@@ -4,26 +4,30 @@
     
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a routerLink="/inicio">Inicio</a></li>
-      <li><a routerLink="/acerca">Acerca</a></li>
-      <li><a routerLink="/administracion/crear-producto">Productos</a></li>
-      <li><a routerLink="/contacto">Contacto</a></li>
-      <li><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
-      <li><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>
-      <li><a routerLink="/seguridad/identificar">Iniciar Sesion</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/inicio">Inicio</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/acerca">Acerca</a></li>
+      <li *ngIf="seInicioSesion"><a routerLink="/administracion/usuarios">Usuarios</a></li>
+      <li *ngIf="seInicioSesion"><a routerLink="/administracion/crear-producto">Productos</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/contacto">Contacto</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
+      <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>
+      <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesion</a></li>
+      <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesion</a></li>
     </ul>
     
   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a routerLink="/inicio">Inicio</a></li>
-  <li><a routerLink="/acerca">Acerca</a></li>
-  <li><a routerLink="/administracion/crear-producto">Productos</a></li>
-  <li><a routerLink="/contacto">Contacto</a></li>
-  <li><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
-  <li><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>
-  <li><a routerLink="/seguridad/identificar">Iniciar Sesion</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/inicio">Inicio</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/acerca">Acerca</a></li>
+  <li *ngIf="seInicioSesion"><a routerLink="/administracion/usuarios">Usuarios</a></li>
+  <li *ngIf="seInicioSesion"><a routerLink="/administracion/crear-producto">Productos</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/contacto">Contacto</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/administracion/crear-usuario">Registrarse</a></li>
+  <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambiarClave">Cambiar Clave</a></li>
+  <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesion</a></li>
+  <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesion</a></li>
 </ul>
 
 
